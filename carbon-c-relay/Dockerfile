@@ -2,7 +2,7 @@ FROM alpine:latest AS build
 
 ENV \
  TERM=xterm \
- C_RELAY_VERSION="3.4" 
+ C_RELAY_VERSION="3.8.1" 
 
 RUN mkdir -p /build/carbon-c-relay /opt/carbon-c-relay
 
@@ -21,7 +21,7 @@ FROM alpine:latest
 
 ENV \
  TERM=xterm \
- C_RELAY_VERSION="3.4" 
+ C_RELAY_VERSION="3.8.1" 
 
 RUN mkdir -p /opt/carbon-c-relay /etc/carbon-c-relay
 
