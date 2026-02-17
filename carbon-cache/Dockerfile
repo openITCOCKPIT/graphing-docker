@@ -6,7 +6,7 @@ RUN apk --no-cache add python3 libffi
 
 RUN apk --no-cache add python3-dev gcc libc-dev py3-pip libffi-dev
 
-RUN pip3 install wheel urllib3
+RUN pip3 install --ignore-installed wheel urllib3
 
 #RUN pip3 install --no-binary=:all: https://github.com/graphite-project/whisper/tarball/master https://github.com/graphite-project/carbon/tarball/master https://github.com/graphite-project/graphite-web/tarball/master
 RUN pip3 install --no-binary=:all: https://github.com/graphite-project/whisper/archive/1.1.10.zip https://github.com/graphite-project/carbon/archive/1.1.10.zip https://github.com/graphite-project/graphite-web/archive/1.1.10.zip

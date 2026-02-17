@@ -6,7 +6,7 @@ RUN apk --no-cache add python3 libffi py3-gunicorn cairo py3-setuptools
 
 RUN apk --no-cache add python3-dev gcc libc-dev py3-pip libffi-dev py3-gunicorn cairo py3-mysqlclient py3-setuptools
 
-RUN pip3 install wheel urllib3
+RUN pip3 install --ignore-installed wheel urllib3
 
 # the touch fixes the missing __init__.py file from the broken zope.interface package ...
 #RUN pip3 install --no-binary=:all: https://github.com/graphite-project/whisper/archive/1.1.6.zip https://github.com/graphite-project/carbon/archive/1.1.6.zip https://github.com/graphite-project/graphite-web/archive/1.1.6.zip "whitenoise==3.*"
